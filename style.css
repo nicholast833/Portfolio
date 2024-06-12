@@ -1,0 +1,214 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,700';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url(https://images.unsplash.com/photo-1480497490787-505ec076689f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW91bnRhaW4lMjByZWZsZWN0aW9ufGVufDB8fDB8fHww);
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+  background-size: cover;
+  height: 100vh;
+  padding: 20px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  color: white; /* Make all text white */
+}
+
+h1 {
+  color: white;
+  font-size: 4em;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to move the icons below the header text */
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.front p {
+  max-width: 1200px; /* Set the maximum width of the About me paragraph */
+  margin: 0 auto; /* Center the paragraph */
+  text-align: center; /* Align the text to the left */
+}
+
+.share-block {
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  margin-top: 20px; /* Add margin to move the icons below the header text */
+}
+
+.share-block a {
+  color: #999;
+  display: inline-block;
+  margin: 0 15px; /* Increase margin to space out icons */
+  font-size: 2em; /* Increase the size of the icons by 2x */
+  transition: .4s linear;
+}
+
+.share-block a:hover {
+  color: white;
+}
+
+.container {
+  width: 85%;
+  height: 100%;
+  -webkit-perspective: 1200;
+  perspective: 1200;
+  -moz-transform: perspective(1200px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  margin: auto; /* Center the bounding box */
+}
+
+.button {
+  text-decoration: none;
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  line-height: 50px;
+  padding-left: 5px; /* Move text "Bio" closer to the button */
+  transition: .6s linear;
+  text-align: center;
+}
+
+.button .fa-home {
+  margin-left: -10px; /* Move the home icon closer to the button */
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #CE1D5A;
+  border-right: 20px solid transparent;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid white;
+  border-right: 20px solid transparent;
+}
+
+.home:hover, .close:hover {
+  color: white;
+}
+
+.home, .close {
+  color: #999;
+  font-size: 20px;
+}
+
+.flipper {
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: .7s linear;
+}
+
+.front, .back {
+  font-family: 'Cabin', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darken the bounding box */
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateX(0deg);
+}
+
+.back {
+  transform: rotateX(-180deg);
+  color: white;
+}
+
+.flipper:target {
+  transform: rotateX(180deg);
+}
+
+.inner {
+  padding: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: left; /* Align text to the left */
+  margin: 0 auto; /* Center the inner div horizontally */
+  width: 80%; /* Adjust width to bring the text in a bit */
+  max-width: 800px; /* Limit the maximum width */
+  margin-top: -50px; /* Move the text up */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.inner .content {
+  max-height: 90vh; /* Limit the content height to prevent scrolling */
+  overflow-y: auto; /* Enable vertical scrolling for content */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 transparent; /* For Firefox */
+  padding-right: 10px; /* Add padding to move the scrollbar closer to the right edge */
+}
+
+.inner .content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.inner .content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.inner .content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+    white-space: normal;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p, ul {
+    font-size: 14px;
+  }
+}
