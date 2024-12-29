@@ -1,101 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Testing</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/c4ytWGbt/Logo.png" type="image/x-icon">
 </head>
 <body>
-<div class="container">
-  <div class="flipper" id="target">
-    <div class="front">
-      <a href="#target" class="home button">Resume</a>
-      <div class="share-block">
-        <a href="https://www.facebook.com/profile.php?id=100070842038988" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/nicksocoolwow/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://github.com/nicholast833" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nicholas-taylor-483178215/" target="_blank"><i class="fa fa-linkedin"></i></a>
-      </div>
-      <h1>Nicholas Taylor</h1>
-      <h2>About me</h2>
-      <p>
-        I am a dedicated and enthusiastic individual with a strong background in computer science. I bring strong problem-solving skills and a creative approach to every challenge. I thrive in dynamic environments where I can leverage my strengths to enhance customer experiences and drive results. My commitment to continuous learning and improvement allows me to stay adaptable and efficient.
-      </p>
-    </div>
-    <div class="back">
-      <a href="#close" class="close button"><i class="fa fa-home"></i></a>
-      <div class="inner">
-        <div class="content">
-          <h2>Experience</h2>
-          <p>
-            <strong>Shift Manager at MOD Pizza</strong><br>
-            Nov 2021 - May 2024 · 2 yrs 7 mos<br>
-            - Using my personal experience and with the help of the crew, shifts under my supervision saw the labor costs of closing decrease by over 50%<br>
-            - By pushing positive attitudes and approaches to our roles, customer reviews increased under my supervision by 15% on average<br>
-            - Due to diligence and attention to detail, shifts under my supervision have been noted as noticeably better than many previous shift managers
-          </p>
-          <p>
-            <strong>Crew Member at McDonald's</strong><br>
-            Jul 2021 - Jun 2022 · 1 yr<br>
-            - Recognized by management for hard work and positivity<br>
-            - Described as responsible and cordial by both general managers
-          </p>
-          <p>
-            <strong>Sales Associate at Aeropostale</strong><br>
-            Jul 2021 - Oct 2021 · 4 mos<br>
-            - Worked on the sales floor and led the store towards overall higher profits<br>
-            - Developed interpersonal skills and sales techniques
-          </p>
-          <h2>Education</h2>
-          <p>
-            <strong>University of Washington Bothell</strong><br>
-            CSS Pre-major<br>
-            Aug 2023 - Jun 2027
-          </p>
-          <p>
-            <strong>Kamiak High School</strong><br>
-            2019 - 2023
-          </p>
-          <p>
-            <strong>DigiPen Institute of Technology</strong><br>
-            Digital Media & Software Development Programs<br>
-            2016 - 2019
-          </p>
-          <h2>Skills</h2>
-          <ul>
-            <li>Restaurant Management</li>
-            <li>Team Leadership</li>
-            <li>Customer Service</li>
-            <li>Employee Relations</li>
-            <li>Retail Sales</li>
-            <li>Persuasion</li>
-            <li>Programming Languages: Python, Java, C++</li>
-            <li>Web Development: HTML, CSS, JavaScript, React</li>
-            <li>Database Management: SQL, MongoDB</li>
-            <li>Tools: Git, Docker, Kubernetes</li>
-          </ul>
-          <h2>Projects</h2>
-          <p>
-            <strong>Canvas Discord Bot</strong><br>
-            An educational portal bot to help students organize their groups, homework, and grades.
-          </p>
-          <p>
-            <strong>Game Development Projects</strong><br>
-            Worked on various game development projects showcasing creativity and technical skills.
-          </p>
-          <p>
-            <strong>Website Development</strong><br>
-            Developed multiple websites, enhancing web presence and functionality.
-          </p>
-          <p>
-            <strong>Other Projects</strong><br>
-            Engaged in numerous other projects demonstrating versatility and a passion for learning.
-          </p>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="https://i.postimg.cc/8PSk8Sbn/kirby-Button-1.gif" alt="avatar" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Nicholas Taylor">Nicholas Taylor</h1>
+                    <p class="title">Software Developer</p>
+                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:nicholast833@gmail.com" class="contact-link">nicholast833</a>
+                        </div>
+                    </li>
+
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="1982-06-23">April 23, 2005</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Seattle, Washington, USA</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://www.linkedin.com/in/nicholas-taylor-483178215/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://github.com/nicholast833" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>I'm a Computer Science student at the University of Washington with a passion for coding, 3D printing, and game design. I enjoy transforming complex problems into creative and functional solutions, whether it's through software development or interactive design.</p>
+                    <p>My focus is on building intuitive, user-friendly, and technically robust solutions that are both functional and innovative. I thrive in environments that challenge my problem-solving skills and allow me to explore new technologies and creative approaches. I’m always looking for opportunities to combine my technical knowledge and creativity to create impactful projects.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Design</h4>
+                                <p class="service-item-text">Personal portfolios as well as projects amongst groups.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Software  development</h4>
+                                <p class="service-item-text">Independant learning as well as college coursework.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ThMJ0wMx/game-icon.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Game Development</h4>
+                                <p class="service-item-text">Hobbyist game developement across multiple platforms.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/0NL8zHpx/icon-photo.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Photography</h4>
+                                <p class="service-item-text">Nature photography on hikes across Washington.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Skills</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/ryPnz1mB/tool-icon.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Language Proficiency</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>Across the many projects that I  worked on I have learned to use Python, Java, C#, SQL, and HTML.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/DysMDxd2/teamwork-icon.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Teamwork and Leadership</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>I demonstrate leadership and teamwork skills on a daily basis, from mentoring new employees and veteran employees across my various roles to managing high-pressure shifts with positivity and efficiency.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/65nGvZwj/cloud-icon.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Adaptability</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>I have consistently shown adaptability and a strong eagerness to learn, whether mastering diverse product ranges on my own time or quickly adjusting to the fast-paced demands of product launches. My ability to thrive in dynamic environments, and drive to do more and more demonstrates my commitment to continuous growth and flexibility.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i.postimg.cc/kXbhRTB0/check.png" alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Goal Oriented</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>I excel in problem-solving and efficiency, with concise and clear goals I prioritize tasks effectively to optimize workflows and drive results. By identifying potential obstacles early and implementing strategic solutions, I consistently improve team performance<./p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+                    </section>
+                </div>
+            </article>
+            
+            <article class="resume " data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">University of Washington</h4>
+                            <span>2023 - 2027</span>
+                            <p class="timeline-text">As a current student pursuing a degree in Computer Science, with a focus on software development, my problem-solving skills are continuously refined through coursework and hands-on projects.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Kamiak Highschool</h4>
+                            <span>2019 - 2023</span>
+                            <p class="timeline-text">I chose my master degree in technology. There I deepened my knowledge, enhanced my skills in the area and learnt how to increase my career prospects in a competitive job market.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">DigiPen Institute of Technology</h4>
+                            <span>Summers 2015 - 2019</span>
+                            <p class="timeline-text">Completed a series of intensive summer courses focused on game design, programming, and problem-solving, gaining hands-on experience in software development. Developed proficiency in C++, Java, and graphic design.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Specialist</h4>
+                            <span>July 2024 - Present</span>
+                            <p class="timeline-text">As a Specialist at Apple, I was tasked with delivering exceptional customer service by educating clients on product features and providing tailored solutions to meet their needs.</p>
+</li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Shift Manager</h4>
+                            <span>2022 - 2024</span>
+                            <p class="timeline-text">As a Shift Manager at MOD Pizza, I oversaw daily operations, managed team performance, and ensured a high level of customer satisfaction during peak hours. I led by example, training new employees, optimizing workflows to reduce labor costs and closing times, and consistently motivating my team to deliver quality service under pressure.</p>
+                      </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Crew Member</h4>
+                            <span>2021 - 2023</span>
+                            <p class="timeline-text">As a Crew Member at McDonald's, I was responsible for providing excellent customer service, managing drive-thru and front-line orders, and ensuring a clean and efficient work environment. I developed strong multitasking and communication skills, while consistently meeting performance metrics and contributing to a positive team atmosphere.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">Language Proficiency</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Java</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Python</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">C#</h5>
+                                <data value="60">60%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 60%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">HTML</h5>
+                                <data value="40">40%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class=" " data-page="">
+                <section class="projects">
+                    <ul class="filter-list"> </ul>
+
+                    <div class="filter-select-box">
+                        <button class="" data-select>
+                           
+                        </button>
+                    </div>
+                </section>
+            </article>
+
+            <article class="" data-page="">
+               
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+                      
+                    </ul>
+                </section>
+            </article>
+
+            <article class=" " data-page="">
+            </article>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
